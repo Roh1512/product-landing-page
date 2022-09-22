@@ -65,7 +65,7 @@ header{
     justify-content: center;
     height: 200px;
     text-align: center;
-    margin: 6rem;
+    margin: 9rem auto 6rem auto ;
 }
 #hero h2{
     font-size: 2rem;
