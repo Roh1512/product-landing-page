@@ -19,29 +19,34 @@ header{
     justify-content: center;
     flex-wrap: wrap;
     box-sizing: border-box;
-    padding: 0 2rem;
     background-color: var(--bodybg);
-}
-#header-img{
-    max-width: 20rem;
+    width: 100%;
 }
 .logo{
-    width: 60vw;
+    margin-right: auto;
+}
+#nav-bar{
+    display: block;
+    height: 80px;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 #nav-bar ul{
     display: flex;
+    flex-wrap: nowrap;
+    
+    gap: 20px;
     list-style: none;
-    gap: 1rem;
-    box-sizing: border-box;
-    justify-self: flex-end;
+}
+#header-img{
+    max-width: 15rem;
 }
 .nav-link{
     text-decoration: none;
     color: black;
     padding: 0.6rem 0.3rem;
     border-radius: 0.2rem;
-    background: rgb(237, 233, 233);
-    line-height: 2.3rem;
+    cursor: pointer;
 }
 .nav-link:hover{
     background: var(--icon);
@@ -78,14 +83,15 @@ header{
     gap: 0.9rem;
 }
 #form #email{
-    width: 20rem;
+    width: 200px;
     padding: 5px;
     text-align: center;
 }
 #form #submit{
     height: 2rem;
-    padding: 0 3rem;
+    padding: 0 1rem;
     background: var(--buttonbg);
+    border: 5px;
     border: transparent;
     font-size: 1.2rem;
     font-weight: bolder;
@@ -128,7 +134,8 @@ header{
     justify-content: center;
     margin: 5rem auto;
     position: relative;
-    width: 70%;
+    width: 100%;
+    max-width: 800px;
     padding-top: 56.25%;
 }
 #video{
@@ -157,10 +164,12 @@ header{
     text-align: center;
     border: 2px solid black;
     border-radius: 1rem;
-    width: 20rem;
+    max-width: 300px;
+    width: 100%;
     flex: 0 1 auto;
     padding-bottom: 1rem;
     box-sizing: border-box;
+    height: 420px;
 }
 .product div{
     font-size: 1.8rem;
@@ -193,7 +202,6 @@ header{
 }
 footer{
     background-color: var(--secbg);
-    max-height: 5rem;
     margin-bottom: -2rem;
     box-sizing: border-box;
 }
@@ -202,8 +210,8 @@ footer ul{
     gap: 1rem;
     justify-content: flex-end;
     align-items: center;
-    padding:1rem 0 0 0;
     margin-right: 2rem;
+    padding-top: 1rem;
 }
 footer li{
     list-style: none;
@@ -212,9 +220,13 @@ footer li a{
     text-decoration: none;
     color: #000000;
 }
+footer li a:hover{
+    color: var(--bodybg);
+}
 footer span{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    margin: 0 2rem 2rem 0;
+    text-align: end;
+}
+footer span p{
+    padding-bottom: 20px;
+    padding-right: 1rem;
 }
